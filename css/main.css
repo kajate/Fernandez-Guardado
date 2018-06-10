@@ -1,14 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
     overflow: auto;
-    max-height: 1280px;
 }
 
 a {
+    font-family: "Roboto Condensed", sans-serif;
     color: white;
     text-decoration: none;
     font-weight: 800;
+    padding: 0px;
+    margin: 0px;
 }
 
 a:active {
@@ -21,17 +28,19 @@ a:hover {
 
 h1 {
     font-family: "Roboto Condensed", sans-serif;
-    padding: 20px;
+    padding: 25px;
+    margin: 0px;
 }
 
 p {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
+    padding: 0px;
 }
 
 .content {
     color: white;
-    padding: 40px;
+    padding: 29px;
 }
 
 .link {
@@ -41,8 +50,35 @@ p {
     margin: 0 auto;
     padding: 0 0px;
     box-sizing: border-box;
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+
+    -o-user-select: none;
+    user-select: none;
 }
 
 .real {
     cursor: pointer;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        font-family: "Roboto Condensed", sans-serif;
+        padding: 25px;
+        padding-left: 17px;
+        margin: 0px;
+    }
+
+    .content {
+        margin: 0;
+        padding: 20px;
+        padding-left: 20px;
+    }
 }
