@@ -16,14 +16,36 @@ $(document).ready(function() {
     //     calculateDivs();
     // });
 
+    // function blueColor() {
+    //     return (
+    //         "rgba(" +
+    //         Math.floor(255 * Math.random() - 150) +
+    //         "," +
+    //         Math.floor(255 * Math.random() - 10) +
+    //         "," +
+    //         Math.floor(255 * Math.random() + 250)
+    //     );
+    // }
+    //
+    // function greenColor() {
+    //     return (
+    //         "rgba(" +
+    //         Math.floor(255 * Math.random() - 75) +
+    //         "," +
+    //         Math.floor(255 * Math.random() + 250) +
+    //         "," +
+    //         Math.floor(255 * Math.random() - 75)
+    //     );
+    // }
+
     function mixColor() {
         return (
             "rgba(" +
-            Math.floor(255 * Math.random()) +
+            Math.floor(255 * Math.random() - 10) +
             "," +
-            Math.floor(255 * Math.random()) +
+            Math.floor(255 * Math.random() - 10) +
             "," +
-            Math.floor(255 * Math.random())
+            Math.floor(255 * Math.random() - 10)
         );
     }
 
