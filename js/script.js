@@ -53,6 +53,7 @@ $(document).ready(function() {
 
     var link = document.querySelector(".link, #martaBtn, #marta");
     var marta = document.querySelector("#marta");
+    var frame = document.querySelector("#frame");
 
     // textarea.addEventListener("input", function(e) {
     //     var hue = mixColor();
@@ -60,13 +61,13 @@ $(document).ready(function() {
     //     marta.style.backgroundColor = hue + "," + 1 + ")";
     // });
 
-    var div_h = 110;
+    var div_h = 115;
 
     function calculateDivs() {
         var w_h = $(window).height() - 0;
         var divs = Math.round(w_h / div_h);
-        for (var i = 0; i < divs; i++) {
-            $(document.body).append($('<div class="link">'));
+        for (var i = 3; i < divs; i++) {
+            $(frame).append($('<div class="link">'));
         }
         var margin = 0;
         $(".link").css("height", w_h / divs - margin);
