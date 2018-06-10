@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    max-height: 1280px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+a:active {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 20px;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+
+.content {
+    color: white;
+    padding: 40px;
+}
+
+.link {
+    height: 108px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0 0px;
+    box-sizing: border-box;
+}
+
+.real {
+    cursor: pointer;
+}
